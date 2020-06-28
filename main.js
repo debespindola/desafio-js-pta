@@ -1,9 +1,13 @@
+alert('Pressione espaço para fazer Paulo desviar das pedras');
+
 const paul = document.querySelector('.character');
 const paulWidth = Number(getComputedStyle(paul).width.split('px').join(''));
 const paulHeight = Number(getComputedStyle(paul).height.split('px').join(''));
 
 const bodyWidth = getComputedStyle(document.body).width;
 const newBodyWidth = Number(bodyWidth.split('px').join(''));
+
+const startTime = Date.now();
 
 const createRock = () => {
   const newImage = document.createElement('IMG');
@@ -43,8 +47,10 @@ const paulPosition = () => {
           && !(rightPaul > (rightRock + widthRock))
         ){
           clearInterval(game);
+          const time = (Date.now() - startTime) / 1000;
           alert('GAME OVER');
-          window.location = window.location;
+          alert(`Você salvou Paulo durante ${time} segundos`)
+          window.location = window.location
         }
       }
   })
