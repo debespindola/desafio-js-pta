@@ -4,6 +4,7 @@ body, html {
 }
 
 body {
+  overflow: hidden;
   display: flex;
   width: 100%;
   height: 100vh;
@@ -22,6 +23,8 @@ body {
 
 .rock {
   width: 200px;
+  position: absolute;
+  top: 0;
 }
 
 .life-counter {
