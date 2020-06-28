@@ -19,6 +19,7 @@ body {
   width: 350px;
   position: absolute;
   left: 0;
+  transform: scaleX(-1);
 }
 
 .rock {
