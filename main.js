@@ -63,5 +63,3 @@ document.addEventListener('keypress', (event) => {
   direction *= -1;
   paul.style.transform = `scaleX(${-direction})`;
 }); 
-
-
