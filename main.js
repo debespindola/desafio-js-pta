@@ -56,13 +56,13 @@ const paulPosition = () => {
   })
 
   counter += 1;
-  if(!(counter % 100)) {
+  if(!(counter % 40)) {
     createRock();
   }
 }
 
 //----------- adicionando movimento --------------------
-const game = setInterval(paulPosition, 1); 
+const game = setInterval(paulPosition, 15); 
 
 //------------ mudando a direção do movimento ----------
 document.addEventListener('keypress', (event) => {
